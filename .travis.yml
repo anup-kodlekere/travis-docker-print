@@ -1,0 +1,11 @@
+os: linux
+arch: ppc64le
+
+script:
+  - docker version
+  - cat /usr/local/bin/docker_func
+
+jobs:
+  include:
+    - group: edge
+    - group: stable
