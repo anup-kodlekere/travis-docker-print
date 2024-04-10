@@ -1,5 +1,8 @@
 os: linux
 arch: ppc64le
+dist: focal
+
+services: docker
 
 script:
   - docker version
